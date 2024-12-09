@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useState } from "react";
 
 function WithoutComposition() {
@@ -43,9 +44,11 @@ function WithoutComposition() {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            className={`block w-full px-3 py-2 bg-gray-700 border ${
-              errors.name ? "border-red-500" : "border-gray-600"
-            } rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500`}
+            className={clsx(
+              "block w-full px-3 py-2 bg-gray-700 border outline-none ring-1",
+              errors.name ? "border-red-500" : "border-gray-600",
+              "rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+            )}
           />
           {errors.name && (
             <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -65,9 +68,11 @@ function WithoutComposition() {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className={`block w-full px-3 py-2 bg-gray-700 border ${
-              errors.email ? "border-red-500" : "border-gray-600"
-            } rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500`}
+            className={clsx(
+              "block w-full px-3 py-2 bg-gray-700 border outline-none ring-1",
+              errors.name ? "border-red-500" : "border-gray-600",
+              "rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+            )}
           />
           {errors.email && (
             <p className="text-red-500 text-sm mt-1">{errors.email}</p>

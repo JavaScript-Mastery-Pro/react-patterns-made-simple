@@ -20,7 +20,7 @@
   }
 
   a {
-    @apply text-blue-400 hover:text-blue-500;
+    @apply text-indigo-400 hover:text-indigo-500;
   }
 
   button {
@@ -38,6 +38,6 @@
   }
 
   .spinner {
-    @apply my-5 animate-spin inline-block size-5 border-2 border-current border-t-transparent text-blue-600 rounded-full;
+    @apply my-5 animate-spin inline-block size-5 border-2 border-current border-t-transparent text-indigo-600 rounded-full;
   }
 }

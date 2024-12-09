@@ -107,8 +107,8 @@ function WithComposition() {
                   value={formData.email}
                   onChange={handleChange}
                   className={clsx(
-                    "block w-full px-3 py-2 bg-gray-700 border",
-                    errors.email && "border-red-500",
+                    "block w-full px-3 py-2 bg-gray-700 border outline-none ring-1",
+                    errors.name ? "border-red-500" : "border-gray-600",
                     "rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
                   )}
                 />

@@ -24,6 +24,21 @@ const patterns = [
     description: "A demo with Composition Pattern",
     path: "/composition/with",
   },
+  {
+    title: "Compound Pattern",
+    description: "A demo with Compound Pattern",
+    path: "/compound",
+  },
+  {
+    title: "With Portal",
+    description: "A demo with Portal Pattern",
+    path: "/portal/with",
+  },
+  {
+    title: "Without Portal",
+    description: "A demo without Portal Pattern",
+    path: "/portal/without",
+  },
 ];
 
 const Home = () => {
