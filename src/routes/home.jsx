@@ -39,6 +39,11 @@ const patterns = [
     description: "A demo without Portal Pattern",
     path: "/portal/without",
   },
+  {
+    title: "Render Props",
+    description: "A demo with Render Props Pattern",
+    path: "/render-props",
+  },
 ];
 
 const Home = () => {

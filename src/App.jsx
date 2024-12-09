@@ -8,6 +8,7 @@ import WithComposition from "./routes/composition/with";
 import CompoundPattern from "./routes/compound";
 import WithPortal from "./routes/portal/with";
 import WithoutPortal from "./routes/portal/without";
+import RenderPropsPattern from "./routes/render-props";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/compound" element={<CompoundPattern />} />
         <Route path="portal/with" element={<WithPortal />} />
         <Route path="portal/without" element={<WithoutPortal />} />
+        <Route path="render-props" element={<RenderPropsPattern />} />
       </Routes>
     </div>
   );
