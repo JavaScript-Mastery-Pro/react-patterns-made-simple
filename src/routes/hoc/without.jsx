@@ -62,7 +62,7 @@ function Dashboard() {
 
 function WithoutHoc() {
   return (
-    <main>
+    <main className="container">
       <Profile />
       <Dashboard />
     </main>

@@ -13,6 +13,17 @@ const patterns = [
       "A demo with HOC, which is a higher-order component (HOC) that takes a component as an argument and returns a new component.",
     path: "/hoc/with",
   },
+  {
+    title: "Without Composition",
+    description:
+      "A demo without Composition, where using it will enable us to reuse code.",
+    path: "/composition/without",
+  },
+  {
+    title: "With Composition",
+    description: "A demo with Composition Pattern",
+    path: "/composition/with",
+  },
 ];
 
 const Home = () => {

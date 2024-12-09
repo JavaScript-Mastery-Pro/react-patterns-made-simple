@@ -52,7 +52,7 @@ const DashboardWithLoading = withLoading(Dashboard, 3000);
 
 function WithHoc() {
   return (
-    <main>
+    <main className="container">
       <ProfileWithLoading title="Profile" />
       <DashboardWithLoading title="Dashboard" />
     </main>
