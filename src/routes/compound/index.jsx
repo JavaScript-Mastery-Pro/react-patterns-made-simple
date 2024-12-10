@@ -7,15 +7,13 @@ function Tabs({ children }) {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <TabsContext.Provider value={{ activeTab, setActiveTab }}>
-      <div className="tabs">{children}</div>
+      <div>{children}</div>
     </TabsContext.Provider>
   );
 }
 
 function TabsList({ children }) {
-  return (
-    <div className="tabs-list flex border-b border-gray-700">{children}</div>
-  );
+  return <div className="tabs-list">{children}</div>;
 }
 
 function Tab({ index, children }) {
@@ -25,10 +23,8 @@ function Tab({ index, children }) {
     <button
       onClick={() => setActiveTab(index)}
       className={clsx(
-        "px-4 py-2 rounded-none text-sm font-medium text-white transition-colors bg-black-100 hover:bg-black-200 focus:bg-black-200 focus:outline-none",
-        index === activeTab
-          ? "border-b-2 border-indigo-500 text-white"
-          : "hover:text-gray-200"
+        "tab",
+        index === activeTab ? "tab-active" : "tab-inactive"
       )}
     >
       {children}
@@ -38,11 +34,7 @@ function Tab({ index, children }) {
 
 function TabPanels({ children }) {
   const { activeTab } = useContext(TabsContext);
-  return (
-    <div className="tab-panels mt-4 p-4 bg-black-200 rounded-lg text-gray-300">
-      {children[activeTab]}
-    </div>
-  );
+  return <div className="tab-panels">{children[activeTab]}</div>;
 }
 
 function TabPanel({ children }) {
@@ -54,7 +46,7 @@ function CompoundPattern() {
     <main className="container">
       <h2>Themed Tabs</h2>
 
-      <div className="my-5">
+      <div className="compound">
         <Tabs>
           <TabsList>
             <Tab index={0}>Tab 1</Tab>

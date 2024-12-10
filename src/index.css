@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   code {
     @apply font-mono text-sm bg-zinc-900 text-orange-400 p-1;
   }
@@ -29,6 +29,108 @@
 
   pre {
     @apply font-mono text-sm bg-zinc-900 text-zinc-50 p-4;
+  }
+}
+
+@layer components {
+  /* Render Props Pattern */
+  .currency-card {
+    @apply bg-black text-gray-500 p-4 rounded-md shadow-md my-4;
+  }
+
+  .currency-card p:first-child {
+    @apply text-sm !mb-1;
+  }
+
+  .currency-card p:last-child {
+    @apply text-4xl text-indigo-500 font-bold;
+  }
+
+  .currency-container {
+    @apply p-6 bg-black-100 text-white rounded-xl shadow-lg max-w-lg mt-10;
+  }
+
+  .currency-container p:first-child {
+    @apply mb-3 text-gray-500;
+  }
+
+  .currency-container input {
+    @apply p-2 mb-4 text-lg border-none block w-full px-3 py-2 bg-gray-700 border outline-none ring-1 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500;
+  }
+
+  /* Portal Pattern */
+  .portal-btn {
+    @apply bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-10;
+  }
+
+  .portal {
+    @apply fixed inset-0 bg-gray-700 bg-opacity-50 flex justify-center items-center;
+  }
+
+  .portal div {
+    @apply bg-black rounded-lg shadow-lg w-96 p-6;
+  }
+
+  .portal h2 {
+    @apply text-2xl font-semibold mb-4;
+  }
+
+  .portal p {
+    @apply text-gray-300 mb-6;
+  }
+
+  .portal button {
+    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+  }
+
+  /* Composition Pattern */
+  .form {
+    @apply space-y-5 mt-10;
+  }
+
+  .form-item {
+    @apply space-y-2;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-300;
+  }
+
+  .form-input {
+    @apply block w-full px-3 py-2 bg-gray-700 border outline-none ring-1 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500;
+  }
+
+  .form-message {
+    @apply text-red-500 text-sm mt-1;
+  }
+
+  .form button {
+    @apply w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600;
+  }
+
+  /* Compound Pattern */
+  .compound {
+    @apply my-10;
+  }
+
+  .tabs-list {
+    @apply flex border-b border-gray-700;
+  }
+
+  .tab {
+    @apply px-4 py-2 rounded-none text-sm font-medium text-white transition-colors bg-black-100 hover:bg-black-200 focus:bg-black-200 focus:outline-none;
+  }
+
+  .tab-active {
+    @apply border-b-2 border-indigo-500 text-white;
+  }
+
+  .tab-inactive {
+    @apply hover:text-gray-200;
+  }
+
+  .tab-panels {
+    @apply mt-4 p-4 bg-black-200 rounded-lg text-gray-300;
   }
 }
 

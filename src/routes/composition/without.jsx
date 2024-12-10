@@ -28,14 +28,11 @@ function WithoutComposition() {
 
   return (
     <main className="container">
-      <h2 className="text-2xl font-bold mb-4">Contact Form</h2>
+      <h2>Contact Form</h2>
 
-      <form onSubmit={handleSubmit} className="space-y-5">
-        <div className="space-y-2">
-          <label
-            htmlFor="name"
-            className="block text-sm font-medium text-gray-300"
-          >
+      <form onSubmit={handleSubmit} className="form">
+        <div className="form-item">
+          <label htmlFor="name" className="form-label">
             Name
           </label>
           <input
@@ -45,21 +42,15 @@ function WithoutComposition() {
             value={formData.name}
             onChange={handleChange}
             className={clsx(
-              "block w-full px-3 py-2 bg-gray-700 border outline-none ring-1",
-              errors.name ? "border-red-500" : "border-gray-600",
-              "rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+              "form-input",
+              errors.name ? "border-red-500" : "border-gray-600"
             )}
           />
-          {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-          )}
+          {errors.name && <p className="form-message">{errors.name}</p>}
         </div>
 
-        <div className="space-y-2">
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-300"
-          >
+        <div className="form-item">
+          <label htmlFor="email" className="form-label">
             Email
           </label>
           <input
@@ -69,22 +60,14 @@ function WithoutComposition() {
             value={formData.email}
             onChange={handleChange}
             className={clsx(
-              "block w-full px-3 py-2 bg-gray-700 border outline-none ring-1",
-              errors.name ? "border-red-500" : "border-gray-600",
-              "rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+              "form-input",
+              errors.name ? "border-red-500" : "border-gray-600"
             )}
           />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
+          {errors.email && <p className="form-message">{errors.email}</p>}
         </div>
 
-        <button
-          type="submit"
-          className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600"
-        >
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </main>
   );
