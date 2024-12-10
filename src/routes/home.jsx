@@ -2,46 +2,51 @@ import { Link } from "react-router";
 
 const patterns = [
   {
-    title: "Without HOC",
+    title: "HOC - Without Pattern",
     description:
-      "A demo code without HOC, where using it will enable us to reuse code.",
+      "A demo showing code duplication that can be fixed by using a Higher-Order Component (HOC).",
     path: "/hoc/without",
   },
   {
-    title: "With HOC",
+    title: "HOC - With Pattern",
     description:
-      "A demo with HOC, which is a higher-order component (HOC) that takes a component as an argument and returns a new component.",
+      "A demo showing how a Higher-Order Component (HOC) helps to reuse logic and make code cleaner.",
     path: "/hoc/with",
   },
   {
-    title: "Without Composition",
+    title: "Composition - Without Pattern",
     description:
-      "A demo without Composition, where using it will enable us to reuse code.",
+      "A demo showing a rigid structure that could be improved by using the Composition Pattern.",
     path: "/composition/without",
   },
   {
-    title: "With Composition",
-    description: "A demo with Composition Pattern",
+    title: "Composition - With Pattern",
+    description:
+      "A demo showing how the Composition Pattern helps to create reusable and flexible components.",
     path: "/composition/with",
   },
   {
-    title: "Compound Pattern",
-    description: "A demo with Compound Pattern",
+    title: "Compound Components Pattern",
+    description:
+      "A demo showing how Compound Components work together to manage complex UIs in a simple way.",
     path: "/compound",
   },
   {
-    title: "With Portal",
-    description: "A demo with Portal Pattern",
+    title: "Portal - With Pattern",
+    description:
+      "A demo using the Portal Pattern to render components outside the main DOM tree for advanced UI needs.",
     path: "/portal/with",
   },
   {
-    title: "Without Portal",
-    description: "A demo without Portal Pattern",
+    title: "Portal - Without Pattern",
+    description:
+      "A demo showing the limitations of rendering components inside the main DOM tree without using Portals.",
     path: "/portal/without",
   },
   {
-    title: "Render Props",
-    description: "A demo with Render Props Pattern",
+    title: "Render Props Pattern",
+    description:
+      "A demo using the Render Props Pattern to share functionality between components through a function.",
     path: "/render-props",
   },
 ];
