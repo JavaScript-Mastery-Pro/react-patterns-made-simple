@@ -132,6 +132,43 @@
   .tab-panels {
     @apply mt-4 p-4 bg-black-200 rounded-lg text-gray-300;
   }
+
+  /* Composition Card Exercise */
+  .card {
+    @apply bg-black-100 text-white rounded-lg shadow-lg p-7 w-fit;
+  }
+
+  .card-header {
+    @apply flex items-start justify-between;
+
+    img {
+      @apply size-20 object-cover rounded-md;
+    }
+  }
+
+  .card-badge {
+    @apply bg-indigo-500 text-white px-2 py-1 rounded-md text-sm;
+  }
+
+  .card-body {
+    @apply mt-4;
+
+    h3 {
+      @apply text-lg font-bold;
+    }
+
+    p {
+      @apply text-sm text-gray-400;
+    }
+  }
+
+  .card-price {
+    @apply mt-2 text-2xl font-bold text-green-500;
+  }
+
+  .card-footer {
+    @apply flex gap-5 mt-4;
+  }
 }
 
 @layer utilities {

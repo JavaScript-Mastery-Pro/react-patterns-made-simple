@@ -38,6 +38,18 @@ const patterns = [
     path: "/composition/with",
   },
   {
+    title: "Composition Card Exercise",
+    description:
+      "An exercise to refactor a monolithic ProductCard into flexible, composable components using the Composition Pattern.",
+    path: "/composition/exercise/problem",
+  },
+  {
+    title: "Composition Card Solution",
+    description:
+      "A solution showing how to break down a complex ProductCard into reusable components using Composition Pattern.",
+    path: "/composition/exercise/solution",
+  },
+  {
     title: "Compound Components Pattern",
     description:
       "A demo showing how Compound Components work together to manage complex UIs in a simple way.",
