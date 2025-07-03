@@ -19,6 +19,9 @@ import CompositionExerciseSolution from "./routes/composition/exercise/solution"
 import CompoundExercise from "./routes/compound/exercise/problem";
 import CompoundExerciseSolution from "./routes/compound/exercise/solution";
 
+import PortalToastExercise from "./routes/portal/exercise/problem";
+// import PortalToastSolution from "./routes/portal/exercise/solution";
+
 function App() {
   return (
     <div className="bg-black min-h-screen w-full">
@@ -55,6 +58,15 @@ function App() {
 
         <Route path="portal/with" element={<WithPortal />} />
         <Route path="portal/without" element={<WithoutPortal />} />
+        <Route
+          path="/portal/exercise/problem"
+          element={<PortalToastExercise />}
+        />
+        {/* <Route
+          path="/portal/toast-solution"
+          element={<PortalToastSolution />}
+        /> */}
+
         <Route path="render-props" element={<RenderPropsPattern />} />
       </Routes>
     </div>

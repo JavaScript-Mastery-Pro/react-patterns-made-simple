@@ -186,6 +186,39 @@
       @apply px-4 py-2 hover:bg-black-200;
     }
   }
+
+  /* Portal Toast Exercise */
+  .toast {
+    @apply fixed top-4 right-4 bg-black-100;
+  }
+
+  .toast-message {
+    @apply text-white px-7 py-2 rounded-lg shadow-lg;
+
+    &.success {
+      @apply bg-green-500;
+
+      &::before {
+        @apply content-['✅'] mr-2;
+      }
+    }
+
+    &.error {
+      @apply bg-red-500;
+
+      &::before {
+        @apply content-['❌'] mr-2;
+      }
+    }
+
+    &.warning {
+      @apply bg-yellow-500;
+
+      &::before {
+        @apply content-['⚠️'] mr-2;
+      }
+    }
+  }
 }
 
 @layer utilities {

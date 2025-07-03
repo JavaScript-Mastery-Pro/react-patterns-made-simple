@@ -80,6 +80,18 @@ const patterns = [
     path: "/portal/without",
   },
   {
+    title: "Portal Toast Exercise",
+    description:
+      "Build a global toast system that uses React Portals and Context to show notifications from anywhere in the app.",
+    path: "/portal/exercise/problem",
+  },
+  {
+    title: "Portal Toast Solution",
+    description:
+      "A complete implementation of a toast notification system using createPortal and Context API for global access.",
+    path: "/portal/exercise/solution",
+  },
+  {
     title: "Render Props Pattern",
     description:
       "A demo using the Render Props Pattern to share functionality between components through a function.",
