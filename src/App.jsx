@@ -22,6 +22,9 @@ import CompoundExerciseSolution from "./routes/compound/exercise/solution";
 import PortalToastExercise from "./routes/portal/exercise/problem";
 import PortalToastSolution from "./routes/portal/exercise/solution";
 
+import RenderPropsTableExercise from "./routes/render-props/exercise/problem";
+import RenderPropsTableSolution from "./routes/render-props/exercise/solution";
+
 function App() {
   return (
     <div className="bg-black min-h-screen w-full">
@@ -68,6 +71,14 @@ function App() {
         />
 
         <Route path="render-props" element={<RenderPropsPattern />} />
+        <Route
+          path="/render-props/exercise/problem"
+          element={<RenderPropsTableExercise />}
+        />
+        <Route
+          path="/render-props/exercise/solution"
+          element={<RenderPropsTableSolution />}
+        />
       </Routes>
     </div>
   );

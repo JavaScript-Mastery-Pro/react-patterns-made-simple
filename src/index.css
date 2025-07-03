@@ -219,6 +219,27 @@
       }
     }
   }
+
+  /* Render Props Table Exercise */
+  table {
+    @apply w-full border border-gray-700 text-white;
+
+    thead {
+      @apply bg-gray-800;
+    }
+
+    th {
+      @apply p-2 text-left border-b border-gray-700;
+    }
+
+    td {
+      @apply p-2 border-b border-gray-700;
+    }
+
+    tr {
+      @apply hover:bg-gray-800;
+    }
+  }
 }
 
 @layer utilities {

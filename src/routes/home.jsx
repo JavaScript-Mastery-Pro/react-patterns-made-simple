@@ -97,6 +97,18 @@ const patterns = [
       "A demo using the Render Props Pattern to share functionality between components through a function.",
     path: "/render-props",
   },
+  {
+    title: "Render Props Table Exercise",
+    description:
+      "Refactor a hardcoded user table into a reusable component using the render props pattern.",
+    path: "/render-props/exercise/problem",
+  },
+  {
+    title: "Render Props Table Solution",
+    description:
+      "A solution showing how to refactor a hardcoded user table into a reusable component using the render props pattern.",
+    path: "/render-props/exercise/solution",
+  },
 ];
 
 const Home = () => {
