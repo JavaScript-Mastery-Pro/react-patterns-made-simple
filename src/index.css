@@ -169,6 +169,23 @@
   .card-footer {
     @apply flex gap-5 mt-4;
   }
+
+  /* Compound Dropdown Exercise */
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-trigger {
+    @apply px-3 py-1.5 rounded;
+  }
+
+  .dropdown-menu {
+    @apply absolute right-0 mt-2 w-48 bg-black-100 text-white rounded-lg shadow-lg;
+
+    li {
+      @apply px-4 py-2 hover:bg-black-200;
+    }
+  }
 }
 
 @layer utilities {

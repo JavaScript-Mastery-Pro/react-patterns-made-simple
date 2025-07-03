@@ -16,6 +16,9 @@ import HOCExerciseSolution from "./routes/hoc/exercise/solution";
 import CompositionExercise from "./routes/composition/exercise/problem";
 import CompositionExerciseSolution from "./routes/composition/exercise/solution";
 
+import CompoundExercise from "./routes/compound/exercise/problem";
+import CompoundExerciseSolution from "./routes/compound/exercise/solution";
+
 function App() {
   return (
     <div className="bg-black min-h-screen w-full">
@@ -41,6 +44,15 @@ function App() {
         />
 
         <Route path="/compound" element={<CompoundPattern />} />
+        <Route
+          path="/compound/exercise/problem"
+          element={<CompoundExercise />}
+        />
+        <Route
+          path="/compound/exercise/solution"
+          element={<CompoundExerciseSolution />}
+        />
+
         <Route path="portal/with" element={<WithPortal />} />
         <Route path="portal/without" element={<WithoutPortal />} />
         <Route path="render-props" element={<RenderPropsPattern />} />
