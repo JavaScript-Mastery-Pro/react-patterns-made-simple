@@ -20,7 +20,7 @@ import CompoundExercise from "./routes/compound/exercise/problem";
 import CompoundExerciseSolution from "./routes/compound/exercise/solution";
 
 import PortalToastExercise from "./routes/portal/exercise/problem";
-// import PortalToastSolution from "./routes/portal/exercise/solution";
+import PortalToastSolution from "./routes/portal/exercise/solution";
 
 function App() {
   return (
@@ -62,10 +62,10 @@ function App() {
           path="/portal/exercise/problem"
           element={<PortalToastExercise />}
         />
-        {/* <Route
-          path="/portal/toast-solution"
+        <Route
+          path="/portal/exercise/solution"
           element={<PortalToastSolution />}
-        /> */}
+        />
 
         <Route path="render-props" element={<RenderPropsPattern />} />
       </Routes>

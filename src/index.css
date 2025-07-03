@@ -189,7 +189,7 @@
 
   /* Portal Toast Exercise */
   .toast {
-    @apply fixed top-4 right-4 bg-black-100;
+    @apply fixed top-4 right-4 bg-black-100 flex flex-col gap-3;
   }
 
   .toast-message {
